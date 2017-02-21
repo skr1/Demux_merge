@@ -4,7 +4,7 @@
 ##Run it as: ./Merge.sh
 ##To execute this script you should be already inside the "Unaligned" folder under the Hiseq run-folder. Put this script under "Unaligned" folder and then execute it from there.
 
-for j in `awk -F "," '{print $3}' ../../SampleSheet.csv | grep -v 'Sample_ID' | sort |uniq`                                                                                                     [ 2:21PM]
+for j in `awk -F "," '{print $3}' ../../SampleSheet.csv | grep -v 'Sample_ID' | sort |uniq`
 do
 zcat Sample_$j/$j*R1*gz > Sample_$j/$j.R1.fastq
 echo "R1 done for Sample_$j"
