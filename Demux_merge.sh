@@ -11,6 +11,6 @@ echo "R1 done for Sample_$j"
 zcat Sample_$j/$j*R2*gz > Sample_$j/$j.R2.fastq
 echo "R2 done for Sample_$j"
 zcat Sample_$j/$j*R3*gz > Sample_$j/$j.R3.fastq
-echo "R3 done for Sample_$j"
+#echo "R3 done for Sample_$j"  ##In case of Read3 unsilent this command
 gzip Sample_$j/*fastq
 done
